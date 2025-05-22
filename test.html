@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aesthetic Workout Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      padding: 1em;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      background: #222;
+      color: #fff;
+      padding: 0.5em;
+      border-radius: 5px;
+    }
+    details {
+      margin: 1em 0;
+      background: #fff;
+      border-radius: 5px;
+      padding: 1em;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    summary {
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    .superset {
+      margin-bottom: 1em;
+    }
+    .exercise {
+      margin: 0.5em 0;
+    }
+    .tempo {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #555;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3em;
+    }
+    input[type="checkbox"] {
+      margin-right: 0.5em;
+    }
+    .rest {
+      margin-top: 0.3em;
+      color: #888;
+      font-size: 0.9em;
+    }
+    .optional {
+      color: #444;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Aesthetic Workout Tracker</h2>
+
+  <details open>
+    <summary>Day 1 – Arms + Shoulders (Push-Pull)</summary>
+    
+    <div class="superset">
+      <strong>Superset 1</strong>
+      <label><input type="checkbox"> Dumbbell Bicep Curl – 2 sets <span class="tempo">(1–2s up, 1s hold, 3s down)</span></label>
+      <label><input type="checkbox"> Overhead Tricep Extension – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 2m rest → repeat</div>
+    </div>
+
+    <div class="superset">
+      <strong>Superset 2</strong>
+      <label><input type="checkbox"> Hammer Curl – 2 sets <span class="tempo">(neutral grip, 3s down)</span></label>
+      <label><input type="checkbox"> Chair Dips – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 2m rest → repeat</div>
+    </div>
+
+    <div class="superset">
+      <strong>Superset 3</strong>
+      <label><input type="checkbox"> Dumbbell Shoulder Press – 2 sets <span class="tempo">(no lockout)</span></label>
+      <label><input type="checkbox"> Lateral Raise – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 90s–2m rest → repeat</div>
+    </div>
+
+    <div class="optional">
+      <label><input type="checkbox"> Plank Hold – 2 sets × 30–45 sec</label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Day 2 – Chest + Back</summary>
+
+    <div class="superset">
+      <strong>Superset 1</strong>
+      <label><input type="checkbox"> Push-Ups – 2 sets <span class="tempo">(2s down, 1s pause)</span></label>
+      <label><input type="checkbox"> Dumbbell Floor Press – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 2m rest → repeat</div>
+    </div>
+
+    <div class="superset">
+      <strong>Superset 2</strong>
+      <label><input type="checkbox"> 1-Arm Dumbbell Row – 2 sets/side <span class="tempo">(2s pull, 1s squeeze, 3s down)</span></label>
+      <label><input type="checkbox"> Reverse Fly – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 2m rest → repeat</div>
+    </div>
+
+    <div class="optional">
+      <label><input type="checkbox"> Deadbugs or Leg Raises – 2 sets × 10–15 reps</label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Day 3 – Light Legs + Core</summary>
+
+    <div class="superset">
+      <strong>Superset 1</strong>
+      <label><input type="checkbox"> Goblet Squats – 3 sets × 10–12 reps <span class="tempo">(slow, controlled)</span></label>
+      <label><input type="checkbox"> Glute Bridges – 3 sets × 12–15 reps <span class="tempo">(pause + squeeze)</span></label>
+      <div class="rest">→ 90s rest</div>
+    </div>
+
+    <div class="superset">
+      <strong>Superset 2</strong>
+      <label><input type="checkbox"> Split Squats – 2 sets/side × 8–10 reps</label>
+      <label><input type="checkbox"> Calf Raises – 2 sets × 15–20 reps <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 90s rest</div>
+    </div>
+
+    <div class="superset">
+      <strong>Core Finisher</strong>
+      <label><input type="checkbox"> Side Planks – 2 sets × 30 sec each</label>
+      <label><input type="checkbox"> Ab Wheel or Rollouts – 2 sets × 8–12 reps</label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Day 4 – Arms + Chest/Back (Isolation + Density)</summary>
+
+    <div class="superset">
+      <strong>Superset 1</strong>
+      <label><input type="checkbox"> Zottman Curl – 2 sets <span class="tempo">(rotate, 3s down)</span></label>
+      <label><input type="checkbox"> Skullcrusher – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 2m rest → repeat</div>
+    </div>
+
+    <div class="superset">
+      <strong>Superset 2</strong>
+      <label><input type="checkbox"> Cross-Body Hammer Curl – 2 sets <span class="tempo">(3s down)</span></label>
+      <label><input type="checkbox"> Overhead Triceps Extension – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 2m rest → repeat</div>
+    </div>
+
+    <div class="superset">
+      <strong>Superset 3</strong>
+      <label><input type="checkbox"> Arnold Press – 2 sets <span class="tempo">(palms in→out)</span></label>
+      <label><input type="checkbox"> Front Raise – 2 sets <span class="tempo">(3s down)</span></label>
+      <div class="rest">→ 90s–2m rest → repeat</div>
+    </div>
+
+    <div class="optional">
+      <label><input type="checkbox"> Push-Up to Failure – 1–2 sets</label>
+      <label><input type="checkbox"> Dumbbell Row to Failure – 1–2 sets</label>
+    </div>
+  </details>
+
+</body>
+</html>
